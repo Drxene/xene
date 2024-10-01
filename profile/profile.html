@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Container styling */
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 4K Video background styling */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .profile-container {
+            text-align: center;
+            
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: background-color 1s ease; /* Smooth transition for background color */
+        }
+
+        /* Profile image styling */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            
+            margin: 0 auto;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Profile details */
+        .profile-name {
+            margin-top: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .profile-bio {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .profile-container {
+                padding: 10px;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+
+            .profile-name {
+                font-size: 1.2em;
+            }
+
+            .profile-bio {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .profile-container {
+                padding: 15px;
+            }
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+
+            .profile-name {
+                font-size: 1.4em;
+            }
+
+            .profile-bio {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (min-width: 1025px) and (max-width: 1440px) {
+            .profile-container {
+                padding: 20px;
+            }
+
+            .profile-pic {
+                width: 140px;
+                height: 140px;
+            }
+
+            .profile-name {
+                font-size: 1.6em;
+            }
+
+            .profile-bio {
+                font-size: 1em;
+            }
+        }
+
+        @media (min-width: 1441px) {
+            .profile-container {
+                padding: 25px;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+
+            .profile-name {
+                font-size: 1.8em;
+            }
+
+            .profile-bio {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+    <title>Profile Account with 4K Video Background</title>
+</head>
+<body>
+    <div class="video-background">
+        <video src="hihi.mp4" autoplay loop playsinline></video>
+    </div>
+    
+    <div class="profile-container" id="profileContainer">
+        <div class="profile-pic">
+            <img src="drix.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-name">Drixene</div>
+        <div class="profile-bio">A RISE</div>
+    </div>
+
+    
+</body>
+</html>
